@@ -29,15 +29,15 @@ Sample CSV raw data : <br/>
 <br />
  <br/>
 Launch the Program and enter CSV data file location, percentile, and outstanding shareholders : <br/>
-<img src="https://i.imgur.com/KPWRSbx.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/qT5VkVk.png" height="80%" width="80%"/>
 <br />
 <br />
 Legend:  <br/>
-<img src="https://i.imgur.com/SJArPMm.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/rHodT8Y.png" height="80%" width="80%" />
 <br />
 <br />
 Above X percentile buy/sell volume transactions along with Japanese Candlestics: <br/>
-<img src="https://i.imgur.com/jTvHRG4.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/75ix5TP.png" height="80%" width="80%" />
 <br />
  <p align="justify"> The figure above shows periodic time series illustrating the top X% volume transactions along with Japanese Candlestics. Assuming big players (e.g. fund managers, high net worth individuals, etc) transact in large quantities, from this figure we can know at what price and when the transactions occur. This program provides flexibility to the users to determine the X percentile. Further, the percentile calculation is done on the ratio of volume/outstanding shares over all the transactions of a day. In <a href="https://github.com/DrShah-Quant/PeriodBigPlayers"> PeriodBigPlayers </a> and <a href="https://github.com/DrShah-Quant/PeriodBigPlayer"> PeriodBigPlayersCandlesticks </a>, i have interpreted big players in an absolute manner for the period in interest (specified by the number of CSV files in a folder-- each CSV file provides transactions for a day), however, in this program, the big players are interpreted in relative manner relaive to outstanding shares. Users can also specify the percentile, so for example, if the percentile is 70%, then the program will pick top daily 30% big players relative to outstanding shares. The augmented Japanese Candlesticks adds more insights (e.g. big players transactions at open and close, also along the body and tails).  </p>
 <br />
