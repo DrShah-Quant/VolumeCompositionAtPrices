@@ -37,7 +37,7 @@ ChartV2:  <br/>
 ChartV3: <br/>
 <img src="https://i.imgur.com/rHodT8Y.png" height="80%" width="80%" />
 <br />
- <p align="justify">  The 3D charts above show variations illustrating buy, sell, and open volumes at each price level for each trading day. These disections allow the 3D charts to highlight the activity regions of buyers and sellers. Strong support and resistence regions with heavy buyers and sellers presence, respectively, can be identified from the charts. Through the decomposition charts we can also see the dominating party (buyer or seller) on each day's volume. We can also further analyze the relative strength between buyers and sellers across price levels and time periods. </p>
+ <p align="justify">  The 3D charts above show variations illustrating buy, sell, and open volumes at each price level for each trading day. These disections allow the 3D charts to highlight the activity regions of buyers and sellers. Strong support and resistence regions with heavy buyers and sellers presence, respectively, can be identified from the charts. Through the decomposition charts we can also see the dominating party (buyer or seller) on each day's volume. We can also further analyze the relative strength between buyers and sellers across price levels and time periods. The information provided by ChartV2 and ChartV3 is similar except the presentation is different -- ChartV3 is clearer since it stacks buy, sell, and open.</p>
 <br />
 
 </p>
