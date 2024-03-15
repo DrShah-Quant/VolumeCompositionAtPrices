@@ -19,30 +19,25 @@
 
 <h2>Program walk-through:</h2>
 
-<p align="justify"> The example run presented here is from a Jupyter Notebook environment. You can run the file using Ctrl+Enter key presses. Alternatively you can run the python script <i>DailyBigPlayerCandlestickWithPercentileRank.py</i> using command <i>python DailyBigPlayerCandlestickWithPercentileRank.py</i> in a command line if you have python installed properly. The program is depended on a CSV file containing stock transactions raw data. In the example presented below, I have used raw data provided by M+ Securities, a Malaysian stock broker. The raw data contains comma separated values organized into the following colums: "Time","Type","Price","Chg","Vol","Value". "Time" is the time when the transaction occured. "Type" refers to the type of transaction such as buy, close, and open. "Price" refers to the price the share was transacted. "Chg" refers to the difference from the previous price. "Vol" refers to the transaction volume measured in lot sizes (1 lot = 100 shares). And finally "Value" refers to the value of the trasaction (i.e. no of shares x share price). </p>
+<p align="justify"> The example run presented here is from a Jupyter Notebook environment. You can run the files (ChartV2.ipynb and ChartV3.ipynb) using Ctrl+Enter key presses at the end of each script. Alternatively you can run the python scripts <i>ChartV2.py </i> and <i>ChartV3.py</i> using command <i>python ChartV2.py</i> or <i>python ChartV3.py</i> in a command line if you have python installed properly. The program is depended on a CSV file containing stock transactions raw data. In the example presented below, I have used raw data provided by M+ Securities, a Malaysian stock broker. The raw data contains comma separated values organized into the following colums: "Time","Type","Price","Chg","Vol","Value". "Time" is the time when the transaction occured. "Type" refers to the type of transaction such as buy, close, and open. "Price" refers to the price the share was transacted. "Chg" refers to the difference from the previous price. "Vol" refers to the transaction volume measured in lot sizes (1 lot = 100 shares). And finally "Value" refers to the value of the trasaction (i.e. no of shares x share price). </p>
 
 <p align="center">
 Sample CSV raw data : <br/>
 <img src="https://i.imgur.com/ZwC3mJi.png" height="80%" width="80%" />
 <br />
  <br/>
-Launch the Program and enter CSV data file location, percentile, and outstanding shareholders : <br/>
+Launch the Program and enter CSV data file location: <br/>
 <img src="https://i.imgur.com/qT5VkVk.png" height="80%" width="80%"/>
 <br />
 <br />
-Legend:  <br/>
-<img src="https://i.imgur.com/rHodT8Y.png" height="80%" width="80%" />
-<br />
-<br />
-Above X percentile buy/sell volume transactions along with Japanese Candlestics: <br/>
+ChartV2:  <br/>
 <img src="https://i.imgur.com/75ix5TP.png" height="80%" width="80%" />
 <br />
- <p align="justify"> The figure above shows periodic time series illustrating the top X% volume transactions along with Japanese Candlestics. Assuming big players (e.g. fund managers, high net worth individuals, etc) transact in large quantities, from this figure we can know at what price and when the transactions occur. This program provides flexibility to the users to determine the X percentile. Further, the percentile calculation is done on the ratio of volume/outstanding shares over all the transactions of a day. In <a href="https://github.com/DrShah-Quant/PeriodBigPlayers"> PeriodBigPlayers </a> and <a href="https://github.com/DrShah-Quant/PeriodBigPlayer"> PeriodBigPlayersCandlesticks </a>, i have interpreted big players in an absolute manner for the period in interest (specified by the number of CSV files in a folder-- each CSV file provides transactions for a day), however, in this program, the big players are interpreted in relative manner relaive to outstanding shares. Users can also specify the percentile, so for example, if the percentile is 70%, then the program will pick top daily 30% big players relative to outstanding shares. The augmented Japanese Candlesticks adds more insights (e.g. big players transactions at open and close, also along the body and tails).  </p>
 <br />
-Number of buy and sell transactions with volume per buy (or sell) transaction along with Japanese Candlestics:  <br/>
-<img src="https://i.imgur.com/QCPxhJ8.png" height="80%" width="80%" />
+ChartV3: <br/>
+<img src="https://i.imgur.com/rHodT8Y.png" height="80%" width="80%" />
 <br />
- <p align="justify"> The figure above is a time series depicting the volume of buy (or sell) transactions at each price level across the time domain. The visualization highlights the price level that attracts the most buying or selling activity. Corresponding to this information, we are also presented with volume per buy(or sell) transaction at each price level to enable us analyse the magnitude of interest at each price level. The augmented Japanese Candlesticks adds more insights (e.g. overall transactions at open and close, also along the body and tails).    </p>
+ <p align="justify">  The 3D charts above show variations illustrating buy, sell, and open volumes at each price level for each trading day. These disections allow the 3D charts to highlight the activity regions of buyers and sellers. Strong support and resistence regions with heavy buyers and sellers presence, respectively, can be identified from the charts. Through the decomposition charts we can also see the dominating party (buyer or seller) on each day's volume. We can also further analyze the relative strength between buyers and sellers across price levels and time periods. </p>
 <br />
 
 </p>
